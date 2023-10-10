@@ -1,0 +1,105 @@
+.header {
+	max-width: 100vw;
+	max-height: 100%;
+	padding-left: calc(100 / 1920 * 100vw);
+	padding-right: calc(100 / 1920 * 100vw);
+	margin-top: calc(50 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imgLogo {
+	width: calc(128 / 1920 * 100vw);
+	height: calc(35 / 1920 * 100vw);
+	transition: 0.2s transform ease-in;
+	cursor: pointer;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: calc(30 / 1920 * 100vw);
+}
+
+.navText {
+	text-decoration: none;
+	color: #636363;
+	font-size: calc(20 / 1920 * 100vw);
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s color ease;
+}
+
+.navText:hover {
+	color: #202020;
+}
+
+.container {
+	max-width: calc(1920 / 1920 * 100vw);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: calc(100 / 1920 * 100vw);
+	padding-left: calc(100 / 1920 * 100vw);
+	margin-top: calc(120 / 1920 * 100vw);
+}
+
+.newsText {
+	font-size: calc(84 / 1920 * 100vw);
+	font-weight: 500;
+}
+
+.newsContainer {
+	margin-top: calc(100 / 1920 * 100vw);
+	max-width: calc(1920 / 1920 * 100vw);
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: calc(20 / 1920 * 100vw);
+}
+
+@media (max-width: 1000px) {
+	.header {
+		padding-left: calc(100 / 1200 * 100vw);
+		padding-right: calc(100 / 1200 * 100vw);
+		margin-top: calc(50 / 1200 * 100vw);
+	}
+
+	.imgLogo {
+		width: calc(250 / 1200 * 100vw);
+		height: calc(70 / 1200 * 100vw);
+	}
+
+	.nav {
+		gap: calc(30 / 1200 * 100vw);
+	}
+
+	.navText {
+		font-size: calc(50 / 1200 * 100vw);
+	}
+
+	.container {
+		max-width: calc(1200 / 1200 * 100vw);
+		padding-right: calc(100 / 1200 * 100vw);
+		padding-left: calc(100 / 1200 * 100vw);
+		margin-top: calc(120 / 1200 * 100vw);
+	}
+
+	.newsText {
+		margin: 0 auto;
+		font-size: calc(100 / 1200 * 100vw);
+	}
+
+	.newsContainer {
+		margin-top: calc(100 / 1200 * 100vw);
+		max-width: calc(1200 / 1200 * 100vw);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: calc(20 / 1200 * 100vw);
+	}
+}

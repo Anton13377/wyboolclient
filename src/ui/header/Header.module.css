@@ -1,0 +1,121 @@
+.container {
+	max-width: 100vw;
+	max-height: 100%;
+	padding-left: calc(100 / 1920 * 100vw);
+	padding-right: calc(100 / 1920 * 100vw);
+	margin-top: calc(50 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imgLogo {
+	width: calc(128 / 1920 * 100vw);
+	height: calc(35 / 1920 * 100vw);
+	transition: 0.2s transform ease-in;
+	cursor: pointer;
+}
+
+.imgLogo:hover {
+	transform: scale(1.1);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: calc(30 / 1920 * 100vw);
+}
+
+.navText {
+	color: #636363;
+	font-size: calc(20 / 1920 * 100vw);
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s color ease;
+}
+
+.navText:hover {
+	color: #202020;
+}
+
+.burgerMenuButton {
+	display: none;
+	width: calc(35 / 1200 * 100vw);
+	height: 100%;
+}
+
+.navGap {
+	color: #636363;
+	font-size: calc(20 / 1200 * 100vw);
+	font-weight: 500;
+}
+
+.mobileMenu {
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: #faf8f5;
+	width: calc(1200 / 1200 * 100vw);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	z-index: 10;
+	gap: calc(15 / 1200 * 100vw);
+}
+
+.burgerMenuButtonClose {
+	position: absolute;
+	z-index: 11;
+	top: calc(80 / 1200 * 100vw);
+	right: calc(80 / 1200 * 100vw);
+	width: calc(80 / 1200 * 100vw);
+	height: calc(80 / 1200 * 100vw);
+}
+
+.mobileMenuItem {
+	color: #636363;
+	font-size: calc(60 / 1200 * 100vw);
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s color ease;
+}
+
+.mobileMenuItem:hover {
+	color: #202020;
+}
+
+.line {
+	width: calc(100 / 1200 * 100vw);
+	background-color: #636363;
+	border: none;
+	border-top: 1px #636363 solid;
+	margin: 0;
+	margin-top: calc(5 / 1200 * 100vw);
+	margin-bottom: calc(5 / 1200 * 100vw);
+}
+
+@media (max-width: 1000px) {
+	.nav {
+		display: none;
+	}
+
+	.burgerMenuButton {
+		display: flex;
+		width: calc(80 / 1200 * 100vw);
+	}
+
+	.container {
+		padding-left: calc(20 / 1200 * 100vw);
+		padding-right: calc(20 / 1200 * 100vw);
+		margin-top: calc(20 / 1200 * 100vw);
+	}
+
+	.imgLogo {
+		width: 25vw;
+		height: 100%;
+	}
+}

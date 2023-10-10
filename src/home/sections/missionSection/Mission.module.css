@@ -1,0 +1,94 @@
+.container {
+	max-width: 100vw;
+	max-height: 100%;
+	padding-left: calc(100 / 1920 * 100vw);
+	padding-right: calc(100 / 1920 * 100vw);
+	margin-top: calc(261 / 1920 * 100vw);
+}
+
+.title {
+	font-weight: 600;
+	font-size: calc(88 / 1920 * 100vw);
+}
+
+.infoBlock {
+	display: flex;
+}
+
+.img {
+	margin-top: calc(80 / 1920 * 100vw);
+	margin-left: calc(190 / 1920 * 100vw);
+	min-width: calc(1000 / 1920 * 100vw);
+	min-height: calc(700 / 1920 * 100vw);
+	max-width: calc(1000 / 1920 * 100vw);
+	max-height: calc(700 / 1920 * 100vw);
+}
+
+.infoBlock2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: calc(80 / 1920 * 100vw);
+	margin-left: calc(100 / 1920 * 100vw);
+}
+
+.subTitle {
+	color: #636363;
+	font-weight: 600;
+	font-size: calc(37 / 1920 * 100vw);
+	line-height: calc(42 / 1920 * 100vw);
+	margin-bottom: calc(52 / 1920 * 100vw);
+}
+
+.description {
+	color: #636363;
+	font-weight: 400;
+	font-size: calc(20 / 1920 * 100vw);
+	line-height: calc(35 / 1920 * 100vw);
+}
+
+@media (max-width: 1000px) {
+	.container {
+		padding-left: calc(0 / 1200 * 100vw);
+		padding-right: calc(0 / 1200 * 100vw);
+		margin-top: calc(261 / 1200 * 100vw);
+	}
+
+	.title {
+		padding-left: calc(100 / 1200 * 100vw);
+		padding-right: calc(100 / 1200 * 100vw);
+		font-size: calc(80 / 1200 * 100vw);
+	}
+
+	.infoBlock {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: calc(1200 / 1200 * 100vw);
+	}
+
+	.img {
+		margin-left: calc(0 / 1200 * 100vw);
+		margin-top: calc(80 / 1200 * 100vw);
+		min-width: calc(1200 / 1200 * 100vw);
+		min-height: calc(700 / 1200 * 100vw);
+		max-width: calc(1200 / 1200 * 100vw);
+		max-height: calc(700 / 1200 * 100vw);
+	}
+
+	.infoBlock2 {
+		margin-top: calc(80 / 1200 * 100vw);
+		margin-left: calc(0 / 1200 * 100vw);
+	}
+
+	.subTitle {
+		font-size: calc(75 / 1200 * 100vw);
+		line-height: calc(72 / 1200 * 100vw);
+		margin-bottom: calc(52 / 1200 * 100vw);
+	}
+
+	.description {
+		font-size: calc(35 / 1200 * 100vw);
+		line-height: calc(50 / 1200 * 100vw);
+	}
+}

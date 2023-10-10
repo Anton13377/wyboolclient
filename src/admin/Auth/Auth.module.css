@@ -1,0 +1,98 @@
+.container {
+	width: calc(1920 / 1920 * 100vw);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form {
+	width: calc(500 / 1920 * 100vw);
+	height: calc(400 / 1920 * 100vw);
+	background-color: #d9d9d9;
+	border-radius: calc(25 / 1920 * 100vw);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form > h1 {
+	font-weight: 700;
+	font-size: calc(50 / 1920 * 100vw);
+	margin-bottom: calc(20 / 1920 * 100vw);
+}
+
+.form > input {
+	font-weight: 700;
+	width: 80%;
+	height: calc(40 / 1920 * 100vw);
+	margin-bottom: calc(20 / 1920 * 100vw);
+	padding-left: calc(10 / 1920 * 100vw);
+	font-size: calc(20 / 1920 * 100vw);
+}
+
+.form > input::placeholder {
+	font-size: calc(20 / 1920 * 100vw);
+}
+
+.form > button {
+	width: calc(300 / 1920 * 100vw);
+	height: calc(50 / 1920 * 100vw);
+	border-radius: calc(25 / 1920 * 100vw);
+	background-color: transparent;
+	border: calc(2 / 1920 * 100vw) solid #202020;
+	font-size: calc(30 / 1920 * 100vw);
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.error {
+	margin-top: calc(20 / 1920 * 100vw);
+	font-size: calc(35 / 1920 * 100vw);
+	color: rgb(220, 27, 27);
+}
+
+@media (max-width: 1000px) {
+	.container {
+		width: calc(1200 / 1200 * 100vw);
+	}
+
+	.form {
+		width: calc(1000 / 1200 * 100vw);
+		height: calc(1000 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+	}
+
+	.form > h1 {
+		font-size: calc(100 / 1200 * 100vw);
+		margin-bottom: calc(20 / 1200 * 100vw);
+	}
+
+	.form > input {
+		height: calc(100 / 1200 * 100vw);
+		margin-bottom: calc(30 / 1200 * 100vw);
+		padding-left: calc(10 / 1200 * 100vw);
+		font-size: calc(40 / 1200 * 100vw);
+	}
+
+	.form > input::placeholder {
+		font-size: calc(40 / 1200 * 100vw);
+	}
+
+	.form > button {
+		width: calc(500 / 1200 * 100vw);
+		height: calc(100 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+		border: calc(2 / 1200 * 100vw) solid #202020;
+		font-size: calc(50 / 1200 * 100vw);
+	}
+
+	.error {
+		margin-top: calc(20 / 1200 * 100vw);
+		font-size: calc(35 / 1200 * 100vw);
+	}
+}

@@ -1,0 +1,126 @@
+.parentBlock {
+	position: relative;
+}
+
+.scroll {
+	opacity: 0;
+	position: absolute;
+	top: calc(220 / 1920 * 100vw);
+	left: 0;
+	width: 1px;
+	height: 1px;
+}
+.img {
+	width: calc(1920 / 1920 * 100vw);
+	height: calc(825 / 1920 * 100vw);
+	margin-top: calc(130 / 1920 * 100vw);
+}
+
+.infoBlock {
+	position: absolute;
+	right: 0;
+	bottom: calc(-150 / 1920 * 100vw);
+	background-color: #202020;
+	width: calc(850 / 1920 * 100vw);
+	height: calc(230 / 1920 * 100vw);
+}
+
+.cardTitle {
+	position: absolute;
+	top: calc(50 / 1920 * 100vw);
+	left: calc(90 / 1920 * 100vw);
+	font-size: calc(20 / 1920 * 100vw);
+	color: white;
+	font-weight: 400;
+}
+
+.serviceName {
+	position: absolute;
+	top: calc(85 / 1920 * 100vw);
+	left: calc(90 / 1920 * 100vw);
+	font-size: calc(53 / 1920 * 100vw);
+	color: white;
+	font-weight: 600;
+}
+
+.serviceDesc {
+	position: absolute;
+	top: calc(170 / 1920 * 100vw);
+	left: calc(90 / 1920 * 100vw);
+	font-size: calc(20 / 1920 * 100vw);
+	color: white;
+	opacity: 0.5;
+	font-weight: 500;
+}
+
+.titleUrl {
+	position: absolute;
+	top: calc(95 / 1920 * 100vw);
+	left: calc(550 / 1920 * 100vw);
+	font-size: calc(20 / 1920 * 100vw);
+	color: white;
+	opacity: 0.5;
+	font-weight: 500;
+}
+
+.textUrl {
+	position: absolute;
+	top: calc(130 / 1920 * 100vw);
+	left: calc(550 / 1920 * 100vw);
+	font-size: calc(20 / 1920 * 100vw);
+	color: white;
+	font-weight: 400;
+	opacity: 1;
+	transition: 0.3s opacity ease;
+}
+
+.textUrl:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 1000px) {
+	.scroll {
+		top: calc(220 / 1200 * 100vw);
+	}
+	.img {
+		height: calc(825 / 1200 * 100vw);
+		margin-top: calc(130 / 1200 * 100vw);
+	}
+
+	.infoBlock {
+		bottom: calc(-150 / 1200 * 100vw);
+		width: calc(900 / 1200 * 100vw);
+		height: calc(275 / 1200 * 100vw);
+	}
+
+	.cardTitle {
+		top: calc(35 / 1200 * 100vw);
+		left: calc(90 / 1200 * 100vw);
+		font-size: calc(30 / 1200 * 100vw);
+	}
+
+	.serviceName {
+		top: calc(85 / 1200 * 100vw);
+		left: calc(90 / 1200 * 100vw);
+		font-size: calc(53 / 1200 * 100vw);
+	}
+
+	.serviceDesc {
+		top: calc(170 / 1200 * 100vw);
+		left: calc(90 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		width: calc(400 / 1200 * 100vw);
+	}
+
+	.titleUrl {
+		top: calc(95 / 1200 * 100vw);
+		left: calc(550 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+	}
+
+	.textUrl {
+		top: calc(130 / 1200 * 100vw);
+		left: calc(550 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+	}
+}

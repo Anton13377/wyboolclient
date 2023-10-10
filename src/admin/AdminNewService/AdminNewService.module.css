@@ -1,0 +1,137 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f7f7f7;
+	padding: calc(20 / 1920 * 100vw);
+	display: flex;
+	align-items: flex-start;
+}
+
+.menu {
+	background-color: white;
+	width: calc(256 / 1920 * 100vw);
+	padding: calc(25 / 1920 * 100vw);
+	border-radius: calc(25 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.menuItem {
+	padding: calc(10 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+
+.menuItemActive {
+	padding: calc(10 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	background-color: #eaf2fd;
+	border-radius: calc(10 / 1920 * 100vw);
+	width: 100%;
+	color: #2f80ed;
+	text-decoration: none;
+	outline: none;
+}
+
+.mainBlock {
+	background-color: white;
+	width: calc(1300 / 1920 * 100vw);
+	padding: calc(25 / 1920 * 100vw);
+	margin-left: calc(20 / 1920 * 100vw);
+	border-radius: calc(25 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.input {
+	background-color: transparent;
+	border: calc(2 / 1920 * 100vw) solid #2f80ed;
+	margin-bottom: calc(20 / 1920 * 100vw);
+	width: calc(300 / 1920 * 100vw);
+	height: calc(50 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	padding-left: calc(10 / 1920 * 100vw);
+	border-radius: calc(15 / 1920 * 100vw);
+}
+
+.inputFile {
+	font-size: calc(25 / 1920 * 100vw);
+}
+
+.btn {
+	background-color: #2f80ed;
+	color: white;
+	margin-top: calc(20 / 1920 * 100vw);
+	font-weight: 600;
+	width: calc(300 / 1920 * 100vw);
+	height: calc(50 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	border: calc(2 / 1920 * 100vw) solid #2f80ed;
+	border-radius: calc(15 / 1920 * 100vw);
+}
+
+@media (max-width: 1000px) {
+	.body {
+		background-color: #f7f7f7;
+		padding: calc(20 / 1200 * 100vw);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.inputFile {
+		font-size: calc(25 / 1200 * 100vw);
+	}
+
+	.menu {
+		width: calc(256 / 1200 * 100vw);
+		padding: calc(25 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+		margin-bottom: calc(20 / 1200 * 100vw);
+	}
+
+	.menuItem {
+		padding: calc(10 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+	}
+
+	.menuItemActive {
+		padding: calc(10 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		border-radius: calc(10 / 1200 * 100vw);
+	}
+
+	.mainBlock {
+		max-width: 100%;
+		padding: calc(25 / 1200 * 100vw);
+		margin-left: calc(20 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+	}
+
+	.input {
+		border: calc(2 / 1200 * 100vw) solid #2f80ed;
+		margin-bottom: calc(20 / 1200 * 100vw);
+		width: calc(300 / 1200 * 100vw);
+		height: calc(50 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		padding-left: calc(10 / 1200 * 100vw);
+		border-radius: calc(15 / 1200 * 100vw);
+	}
+
+	.btn {
+		margin-top: calc(20 / 1200 * 100vw);
+		width: calc(300 / 1200 * 100vw);
+		height: calc(50 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		border: calc(2 / 1200 * 100vw) solid #2f80ed;
+		border-radius: calc(15 / 1200 * 100vw);
+	}
+}

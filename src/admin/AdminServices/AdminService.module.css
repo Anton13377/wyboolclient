@@ -1,0 +1,259 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f7f7f7;
+	padding: calc(20 / 1920 * 100vw);
+	display: flex;
+	align-items: flex-start;
+}
+
+.menu {
+	background-color: white;
+	width: calc(256 / 1920 * 100vw);
+	padding: calc(25 / 1920 * 100vw);
+	border-radius: calc(25 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.menuItem {
+	padding: calc(10 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+
+.menuItemActive {
+	padding: calc(10 / 1920 * 100vw);
+	font-size: calc(25 / 1920 * 100vw);
+	background-color: #eaf2fd;
+	border-radius: calc(10 / 1920 * 100vw);
+	width: 100%;
+	color: #2f80ed;
+	text-decoration: none;
+	outline: none;
+}
+
+.mainBlock {
+	background-color: white;
+	width: calc(1300 / 1920 * 100vw);
+	padding: calc(25 / 1920 * 100vw);
+	margin-left: calc(20 / 1920 * 100vw);
+	border-radius: calc(25 / 1920 * 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.table {
+	border-collapse: collapse;
+}
+
+.btnDel {
+	background-color: #42aaff;
+	color: white;
+	margin-top: calc(20 / 1920 * 100vw);
+	font-weight: 600;
+	width: calc(250 / 1920 * 100vw);
+	height: calc(55 / 1920 * 100vw);
+	font-size: calc(22 / 1920 * 100vw);
+	border: calc(0 / 1920 * 100vw) solid #42aaff;
+	border-radius: calc(15 / 1920 * 100vw);
+}
+
+.btnDel:hover {
+	background: rgba(0, 0, 0, 0);
+	color: #42aaff;
+	box-shadow: inset 0 0 0 calc(3 / 1920 * 100vw) #42aaff;
+	cursor: pointer;
+}
+
+.btnRed {
+	background-color: #f7c187;
+	color: white;
+	margin-top: calc(20 / 1920 * 100vw);
+	font-weight: 600;
+	font-size: calc(25 / 1920 * 100vw);
+	border: calc(0 / 1920 * 100vw) solid #f7c187;
+	border-radius: calc(15 / 1920 * 100vw);
+	padding-left: calc(60 / 1920 * 100vw);
+	padding-right: calc(60 / 1920 * 100vw);
+	padding-top: calc(14 / 1920 * 100vw);
+	padding-bottom: calc(14 / 1920 * 100vw);
+}
+
+.btnRed:hover {
+	background: rgba(0, 0, 0, 0);
+	color: #f7c187;
+	box-shadow: inset 0 0 0 calc(3 / 1920 * 100vw) #f7c187;
+	cursor: pointer;
+}
+
+.btnAdd {
+	background-color: #a8e4a0;
+	color: white;
+	margin-top: calc(20 / 1920 * 100vw);
+	font-weight: 600;
+	font-size: calc(22 / 1920 * 100vw);
+	border: calc(0 / 1920 * 100vw) solid #a8e4a0;
+	border-radius: calc(15 / 1920 * 100vw);
+	text-decoration: none;
+	outline: none;
+	padding-left: calc(78 / 1920 * 100vw);
+	padding-right: calc(78 / 1920 * 100vw);
+	padding-top: calc(15 / 1920 * 100vw);
+	padding-bottom: calc(15 / 1920 * 100vw);
+}
+
+.btnAdd:hover {
+	background: rgba(0, 0, 0, 0);
+	color: #a8e4a0;
+	box-shadow: inset 0 0 0 calc(3 / 1920 * 100vw) #a8e4a0;
+	cursor: pointer;
+}
+
+.ourSer {
+	font-size: calc(35 / 1920 * 100vw);
+	width: calc(900 / 1920 * 100vw);
+	text-align: left;
+	padding-bottom: calc(40 / 1920 * 100vw);
+}
+
+.servBtnDel {
+	border: calc(2 / 1920 * 100vw) solid #2f80ed;
+	border-left: #f7f7f7;
+	border-right: #f7f7f7;
+	padding-bottom: calc(25 / 1920 * 100vw);
+}
+
+.servBtnRed {
+	border: calc(2 / 1920 * 100vw) solid #2f80ed;
+	border-left: #f7f7f7;
+	border-right: #f7f7f7;
+	padding-bottom: calc(5 / 1920 * 100vw);
+	padding-right: calc(25 / 1920 * 100vw);
+}
+
+.servBtnAdd {
+	padding-bottom: calc(20 / 1920 * 100vw);
+}
+
+tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.servName {
+	padding-top: calc(30 / 1920 * 100vw);
+	width: 100%;
+	font-size: calc(30 / 1920 * 100vw);
+	border: calc(2 / 1920 * 100vw) solid #2f80ed;
+	border-right: #f7f7f7;
+	border-left: #f7f7f7;
+}
+
+@media (max-width: 1000px) {
+	.body {
+		padding: calc(20 / 1200 * 100vw);
+	}
+
+	.menu {
+		width: calc(256 / 1200 * 100vw);
+		padding: calc(25 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+	}
+
+	.menuItem {
+		padding: calc(10 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+	}
+
+	.menuItemActive {
+		padding: calc(10 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		border-radius: calc(10 / 1200 * 100vw);
+	}
+
+	.mainBlock {
+		width: calc(1300 / 1200 * 100vw);
+		padding: calc(25 / 1200 * 100vw);
+		margin-left: calc(20 / 1200 * 100vw);
+		border-radius: calc(25 / 1200 * 100vw);
+	}
+
+	.btnDel {
+		margin-top: calc(20 / 1200 * 100vw);
+		width: calc(250 / 1200 * 100vw);
+		height: calc(55 / 1200 * 100vw);
+		font-size: calc(22 / 1200 * 100vw);
+		border: calc(0 / 1200 * 100vw) solid #42aaff;
+		border-radius: calc(15 / 1200 * 100vw);
+	}
+
+	.btnDel:hover {
+		box-shadow: inset 0 0 0 calc(3 / 1200 * 100vw) #42aaff;
+	}
+
+	.btnRed {
+		margin-top: calc(20 / 1200 * 100vw);
+		font-size: calc(25 / 1200 * 100vw);
+		border: calc(0 / 1200 * 100vw) solid #f7c187;
+		border-radius: calc(15 / 1200 * 100vw);
+		padding-left: calc(60 / 1200 * 100vw);
+		padding-right: calc(60 / 1200 * 100vw);
+		padding-top: calc(14 / 1200 * 100vw);
+		padding-bottom: calc(14 / 1200 * 100vw);
+	}
+
+	.btnRed:hover {
+		box-shadow: inset 0 0 0 calc(3 / 1200 * 100vw) #f7c187;
+	}
+
+	.btnAdd {
+		margin-top: calc(20 / 1200 * 100vw);
+		font-size: calc(22 / 1200 * 100vw);
+		border: calc(0 / 1200 * 100vw) solid #a8e4a0;
+		border-radius: calc(15 / 1200 * 100vw);
+		padding-left: calc(78 / 1200 * 100vw);
+		padding-right: calc(78 / 1200 * 100vw);
+		padding-top: calc(15 / 1200 * 100vw);
+		padding-bottom: calc(15 / 1200 * 100vw);
+	}
+
+	.btnAdd:hover {
+		box-shadow: inset 0 0 0 calc(3 / 1200 * 100vw) #a8e4a0;
+	}
+
+	.ourSer {
+		font-size: calc(35 / 1200 * 100vw);
+		width: calc(900 / 1200 * 100vw);
+		padding-bottom: calc(40 / 1200 * 100vw);
+	}
+
+	.servBtnDel {
+		border: calc(2 / 1200 * 100vw) solid #2f80ed;
+		padding-bottom: calc(25 / 1200 * 100vw);
+	}
+
+	.servBtnRed {
+		border: calc(2 / 1200 * 100vw) solid #2f80ed;
+		padding-bottom: calc(25 / 1200 * 100vw);
+		padding-right: calc(25 / 1200 * 100vw);
+	}
+
+	.servBtnAdd {
+		padding-bottom: calc(20 / 1200 * 100vw);
+	}
+
+	.servName {
+		padding-top: calc(30 / 1200 * 100vw);
+		font-size: calc(30 / 1200 * 100vw);
+		border: calc(2 / 1200 * 100vw) solid #2f80ed;
+	}
+}
