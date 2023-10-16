@@ -22,13 +22,13 @@ const Footer = () => {
 						info@wybool.ru
 					</a>
 					<div className={styles.social}>
-						<a href='#' className={styles.linkSoc}>
+						{/* <a href='#' className={styles.linkSoc}>
 							<p className={styles.youtube}></p>
-						</a>
-						<a href='#' className={styles.linkSoc}>
+						</a> */}
+						<a href='https://vk.com/wybool' target="_blank" className={styles.linkSoc}>
 							<p className={styles.vk}></p>
 						</a>
-						<a href='#' className={styles.linkSoc}>
+						<a href='https://t.me/wybool' target="_blank" className={styles.linkSoc}>
 							<p className={styles.tg}></p>
 						</a>
 					</div>
@@ -97,7 +97,7 @@ const Footer = () => {
 							Новости
 						</Link>
 					</div>
-					<div className={styles.linksBlock}>
+					{/* <div className={styles.linksBlock}>
 						<h1>Информация</h1>
 						<LinkTo className={styles.linkTo} target='_blank' to='#'>
 							Пользовательское соглашение
@@ -105,8 +105,8 @@ const Footer = () => {
 						<LinkTo className={styles.linkTo} target='_blank' to='#'>
 							Команда
 						</LinkTo>
-					</div>
-					<div className={styles.linksBlock}>
+					</div> */}
+				       {/* <div className={styles.linksBlock}>
 						<h1>Работа в Вайбул</h1>
 						<LinkTo className={styles.linkTo} target='_blank' to='#'>
 							Стажировка
@@ -117,7 +117,7 @@ const Footer = () => {
 						<LinkTo className={styles.linkTo} target='_blank' to='#'>
 							Для студентов
 						</LinkTo>
-					</div>
+					</div> */}
 				</div>
 				<a
 					href='https://wybool.ru'

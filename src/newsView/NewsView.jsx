@@ -30,6 +30,9 @@ const NewsView = () => {
 	if (!data) {
 		return null;
 	}
+
+        const htmlContent = { __html: data.description };
+
 	return (
 		<>
 			<header className={styles.header} id='Start'>
@@ -46,11 +49,11 @@ const NewsView = () => {
 				<h1 className={styles.newsTitle}>{data.title}</h1>
 				<div className={styles.newsContainer}>
 					<img
-						src={`http://localhost:3326/${data.imageUrl}`}
+						src={`https://server.wybool.ru/${data.imageUrl}`}
 						alt='Изображение новости'
 						className={styles.newsImg}
 					/>
-					<p className={styles.paragraph}>{data.description}</p>
+					<p className={styles.paragraph} dangerouslySetInnerHTML={htmlContent}></p>
 				</div>
 			</div>
 			<Footer />

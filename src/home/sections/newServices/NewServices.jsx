@@ -24,7 +24,7 @@ const NewServices = () => {
 				<div className={styles.scroll} id='newServices'></div>
 				<img
 					className={styles.img}
-					src={`http://localhost:3326/${data[0]?.imageUrl}`}
+					src={`https://server.wybool.ru/${data[0]?.imageUrl}`}
 					alt='Новый сервис Вайбул'
 				/>
 				<div className={styles.infoBlock}>

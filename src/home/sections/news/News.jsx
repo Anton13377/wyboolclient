@@ -32,7 +32,7 @@ const News = () => {
 							key={index}
 						>
 							<img
-								src={`http://localhost:3326/${newsItem.imageUrl}`}
+								src={`https://server.wybool.ru/${newsItem.imageUrl}`}
 								alt={`Новость от Вайбул ${index + 1}`}
 							/>
 							<div

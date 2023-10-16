@@ -7,7 +7,7 @@ const Card = ({ newsItem }) => {
 			<div className={styles.newsCard}>
 				<hr className={styles.topLine} />
 				<img
-					src={`http://localhost:3326/${newsItem.imageUrl}`}
+					src={`https://server.wybool.ru/${newsItem.imageUrl}`}
 					alt={`Новость от Вайбул "${newsItem.title}"`}
 				/>
 				<div className={styles.cardNewsInfo}>

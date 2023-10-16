@@ -33,7 +33,7 @@ const MainServices = () => {
 							>
 								<h3 className={styles.serviceTitle}>{service.name}</h3>
 								<img
-									src={`http://localhost:3326/${service.logoUrl}`}
+									src={`https://server.wybool.ru/${service.logoUrl}`}
 									alt='Логотип сервиса'
 									className={styles.logoService}
 								/>

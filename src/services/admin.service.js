@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class Admin {
-	API_BASE_URL = 'http://localhost:3326/wybool';
+	API_BASE_URL = 'https://server.wybool.ru/wybool';
 
 	async Auth({ username, password }) {
 		const data = {
